@@ -1,0 +1,517 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:var(--label-label-m-font-weight),var(--label-label-s-font-weight),var(--headings-display-m-font-weight),var(--body-body-m-font-weight),var(--headings-h2-font-weight),var(--body-body-s-font-weight),var(--headings-h4-font-weight),800,500,700,var(--headings-display-l-font-weight),var(--label-label-XS-font-weight)");
+
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --body-body-m-font-family: "Montserrat", Helvetica;
+  --body-body-m-font-size: 16px;
+  --body-body-m-font-style: normal;
+  --body-body-m-font-weight: 500;
+  --body-body-m-letter-spacing: 0px;
+  --body-body-m-line-height: 24px;
+  --body-body-s-font-family: "Montserrat", Helvetica;
+  --body-body-s-font-size: 14px;
+  --body-body-s-font-style: normal;
+  --body-body-s-font-weight: 500;
+  --body-body-s-letter-spacing: 0px;
+  --body-body-s-line-height: 21px;
+  --brand-colors-brand-neutral-100: rgba(235, 236, 243, 1);
+  --brand-colors-brand-neutral-100-duplicate: rgba(235, 236, 243, 1);
+  --brand-colors-brand-neutral-200: rgba(212, 215, 227, 1);
+  --brand-colors-brand-neutral-200-duplicate: rgba(212, 215, 227, 1);
+  --brand-colors-brand-neutral-300: rgba(174, 181, 203, 1);
+  --brand-colors-brand-neutral-400: rgba(129, 141, 175, 1);
+  --brand-colors-brand-neutral-50: rgba(246, 246, 249, 1);
+  --brand-colors-brand-neutral-500: rgba(98, 111, 149, 1);
+  --brand-colors-brand-neutral-600: rgba(77, 87, 124, 1);
+  --brand-colors-brand-neutral-600-duplicate: rgba(77, 87, 124, 1);
+  --brand-colors-brand-neutral-700: rgba(63, 71, 101, 1);
+  --brand-colors-brand-neutral-700-duplicate: rgba(63, 71, 101, 1);
+  --brand-colors-brand-neutral-800: rgba(55, 61, 85, 1);
+  --brand-colors-brand-neutral-900: rgba(45, 49, 66, 1);
+  --brand-colors-brand-neutral-900-duplicate: rgba(45, 49, 66, 1);
+  --brand-colors-brand-neutral-950: rgba(33, 35, 48, 1);
+  --brand-colors-electric-violet-100: rgba(237, 232, 255, 1);
+  --brand-colors-electric-violet-100-duplicate: rgba(237, 232, 255, 1);
+  --brand-colors-electric-violet-200: rgba(220, 212, 255, 1);
+  --brand-colors-electric-violet-200-duplicate: rgba(220, 212, 255, 1);
+  --brand-colors-electric-violet-300: rgba(194, 177, 255, 1);
+  --brand-colors-electric-violet-400: rgba(165, 133, 255, 1);
+  --brand-colors-electric-violet-50: rgba(244, 242, 255, 1);
+  --brand-colors-electric-violet-500: rgba(135, 79, 255, 1);
+  --brand-colors-electric-violet-600: rgba(124, 48, 247, 1);
+  --brand-colors-electric-violet-800: rgba(91, 24, 191, 1);
+  --brand-colors-electric-violet-800-duplicate: rgba(91, 24, 191, 1);
+  --brand-colors-electric-violet-900: rgba(76, 22, 156, 1);
+  --brand-colors-electric-violet-950: rgba(46, 11, 106, 1);
+  --brand-colors-fern-100: rgba(219, 240, 220, 1);
+  --brand-colors-fern-200: rgba(185, 225, 189, 1);
+  --brand-colors-fern-300: rgba(139, 202, 149, 1);
+  --brand-colors-fern-400: rgba(105, 181, 120, 1);
+  --brand-colors-fern-50: rgba(240, 249, 241, 1);
+  --brand-colors-fern-500: rgba(56, 145, 77, 1);
+  --brand-colors-fern-600: rgba(39, 116, 58, 1);
+  --brand-colors-fern-700: rgba(31, 93, 48, 1);
+  --brand-colors-fern-800: rgba(27, 74, 40, 1);
+  --brand-colors-fern-900: rgba(23, 61, 34, 1);
+  --brand-colors-fern-950: rgba(12, 34, 19, 1);
+  --brand-colors-lavender-rose-100: rgba(250, 209, 242, 1);
+  --brand-colors-lavender-rose-200: rgba(245, 163, 230, 1);
+  --brand-colors-lavender-rose-300: rgba(240, 117, 217, 1);
+  --brand-colors-lavender-rose-400: rgba(235, 71, 205, 1);
+  --brand-colors-lavender-rose-50: rgba(252, 232, 249, 1);
+  --brand-colors-lavender-rose-500: rgba(230, 25, 192, 1);
+  --brand-colors-lavender-rose-600: rgba(184, 20, 154, 1);
+  --brand-colors-lavender-rose-700: rgba(138, 15, 115, 1);
+  --brand-colors-lavender-rose-800: rgba(92, 10, 77, 1);
+  --brand-colors-lavender-rose-900: rgba(46, 5, 38, 1);
+  --brand-colors-lavender-rose-950: rgba(32, 4, 27, 1);
+  --brand-colors-mustard-100: rgba(255, 243, 198, 1);
+  --brand-colors-mustard-100-duplicate: rgba(255, 243, 198, 1);
+  --brand-colors-mustard-200: rgba(254, 229, 137, 1);
+  --brand-colors-mustard-300: rgba(254, 216, 103, 1);
+  --brand-colors-mustard-400: rgba(253, 188, 34, 1);
+  --brand-colors-mustard-50: rgba(255, 251, 235, 1);
+  --brand-colors-mustard-500: rgba(253, 188, 34, 1);
+  --brand-colors-mustard-600: rgba(219, 115, 4, 1);
+  --brand-colors-mustard-700: rgba(182, 80, 7, 1);
+  --brand-colors-mustard-800: rgba(147, 61, 13, 1);
+  --brand-colors-mustard-900: rgba(121, 51, 14, 1);
+  --brand-colors-mustard-950: rgba(70, 25, 2, 1);
+  --brand-colors-red-100: rgba(252, 165, 165, 1);
+  --brand-colors-red-200: rgba(239, 68, 68, 1);
+  --brand-colors-red-300: rgba(220, 38, 38, 1);
+  --brand-colors-red-400: rgba(185, 28, 28, 1);
+  --brand-colors-red-50: rgba(255, 226, 226, 1);
+  --fern-100: rgba(219, 240, 220, 1);
+  --headings-display-l-font-family: "Montserrat", Helvetica;
+  --headings-display-l-font-size: 48px;
+  --headings-display-l-font-style: normal;
+  --headings-display-l-font-weight: 800;
+  --headings-display-l-letter-spacing: -0.3840000057220459px;
+  --headings-display-l-line-height: 60px;
+  --headings-display-m-font-family: "Montserrat", Helvetica;
+  --headings-display-m-font-size: 36px;
+  --headings-display-m-font-style: normal;
+  --headings-display-m-font-weight: 700;
+  --headings-display-m-letter-spacing: -0.18px;
+  --headings-display-m-line-height: 47px;
+  --headings-h2-font-family: "Montserrat", Helvetica;
+  --headings-h2-font-size: 30px;
+  --headings-h2-font-style: normal;
+  --headings-h2-font-weight: 600;
+  --headings-h2-letter-spacing: -0.09000000357627869px;
+  --headings-h2-line-height: 40px;
+  --headings-h4-font-family: "Montserrat", Helvetica;
+  --headings-h4-font-size: 20px;
+  --headings-h4-font-style: normal;
+  --headings-h4-font-weight: 600;
+  --headings-h4-letter-spacing: 0px;
+  --headings-h4-line-height: 28px;
+  --label-label-m-font-family: "Montserrat", Helvetica;
+  --label-label-m-font-size: 16px;
+  --label-label-m-font-style: normal;
+  --label-label-m-font-weight: 500;
+  --label-label-m-letter-spacing: 0px;
+  --label-label-m-line-height: 22px;
+  --label-label-s-font-family: "Montserrat", Helvetica;
+  --label-label-s-font-size: 14px;
+  --label-label-s-font-style: normal;
+  --label-label-s-font-weight: 500;
+  --label-label-s-letter-spacing: 0.028000000417232513px;
+  --label-label-s-line-height: 19px;
+  --label-label-XS-font-family: "Montserrat", Helvetica;
+  --label-label-XS-font-size: 12px;
+  --label-label-XS-font-style: normal;
+  --label-label-XS-font-weight: 600;
+  --label-label-XS-letter-spacing: 0.04800000071525574px;
+  --label-label-XS-line-height: 16px;
+  --lavender-100: rgba(250, 209, 242, 1);
+  --lavender-50: rgba(252, 232, 249, 1);
+  --mobile-body-LG-font-family: "Montserrat", Helvetica;
+  --mobile-body-LG-font-size: 16px;
+  --mobile-body-LG-font-style: normal;
+  --mobile-body-LG-font-weight: 400;
+  --mobile-body-LG-letter-spacing: 0px;
+  --mobile-body-LG-line-height: 26px;
+  --mobile-body-MD-font-family: "Montserrat", Helvetica;
+  --mobile-body-MD-font-size: 14px;
+  --mobile-body-MD-font-style: normal;
+  --mobile-body-MD-font-weight: 400;
+  --mobile-body-MD-letter-spacing: 0px;
+  --mobile-body-MD-line-height: 22px;
+  --mobile-body-SM-font-family: "Montserrat", Helvetica;
+  --mobile-body-SM-font-size: 12px;
+  --mobile-body-SM-font-style: normal;
+  --mobile-body-SM-font-weight: 400;
+  --mobile-body-SM-letter-spacing: 0px;
+  --mobile-body-SM-line-height: 18px;
+  --mobile-display-LG-font-family: "Montserrat", Helvetica;
+  --mobile-display-LG-font-size: 24px;
+  --mobile-display-LG-font-style: normal;
+  --mobile-display-LG-font-weight: 700;
+  --mobile-display-LG-letter-spacing: -0.09600000143051148px;
+  --mobile-display-LG-line-height: 32px;
+  --mobile-display-MD-font-family: "Montserrat", Helvetica;
+  --mobile-display-MD-font-size: 20px;
+  --mobile-display-MD-font-style: normal;
+  --mobile-display-MD-font-weight: 700;
+  --mobile-display-MD-letter-spacing: -0.06000000238418579px;
+  --mobile-display-MD-line-height: 28px;
+  --mobile-heading-h2-font-family: "Montserrat", Helvetica;
+  --mobile-heading-h2-font-size: 18px;
+  --mobile-heading-h2-font-style: normal;
+  --mobile-heading-h2-font-weight: 600;
+  --mobile-heading-h2-letter-spacing: -0.036000000536441805px;
+  --mobile-heading-h2-line-height: 26px;
+  --mobile-heading-h3-font-family: "Montserrat", Helvetica;
+  --mobile-heading-h3-font-size: 16px;
+  --mobile-heading-h3-font-style: normal;
+  --mobile-heading-h3-font-weight: 600;
+  --mobile-heading-h3-letter-spacing: 0px;
+  --mobile-heading-h3-line-height: 24px;
+  --mobile-label-LG-font-family: "Montserrat", Helvetica;
+  --mobile-label-LG-font-size: 16px;
+  --mobile-label-LG-font-style: normal;
+  --mobile-label-LG-font-weight: 500;
+  --mobile-label-LG-letter-spacing: 0px;
+  --mobile-label-LG-line-height: 24px;
+  --mobile-label-MD-font-family: "Montserrat", Helvetica;
+  --mobile-label-MD-font-size: 14px;
+  --mobile-label-MD-font-style: normal;
+  --mobile-label-MD-font-weight: 500;
+  --mobile-label-MD-italic-font-family: "Montserrat", Helvetica;
+  --mobile-label-MD-italic-font-size: 14px;
+  --mobile-label-MD-italic-font-style: italic;
+  --mobile-label-MD-italic-font-weight: 600;
+  --mobile-label-MD-italic-letter-spacing: 0px;
+  --mobile-label-MD-italic-line-height: 20px;
+  --mobile-label-MD-letter-spacing: 0px;
+  --mobile-label-MD-line-height: 20px;
+  --mobile-label-SM-font-family: "Montserrat", Helvetica;
+  --mobile-label-SM-font-size: 12px;
+  --mobile-label-SM-font-style: normal;
+  --mobile-label-SM-font-weight: 500;
+  --mobile-label-SM-italic-font-family: "Montserrat", Helvetica;
+  --mobile-label-SM-italic-font-size: 12px;
+  --mobile-label-SM-italic-font-style: italic;
+  --mobile-label-SM-italic-font-weight: 600;
+  --mobile-label-SM-italic-letter-spacing: 0.02400000035762787px;
+  --mobile-label-SM-italic-line-height: 16px;
+  --mobile-label-SM-letter-spacing: 0.02400000035762787px;
+  --mobile-label-SM-line-height: 16px;
+  --mobile-label-XS-font-family: "Montserrat", Helvetica;
+  --mobile-label-XS-font-size: 11px;
+  --mobile-label-XS-font-style: normal;
+  --mobile-label-XS-font-weight: 500;
+  --mobile-label-XS-letter-spacing: 0.04400000065565109px;
+  --mobile-label-XS-line-height: 14px;
+  --neutral-50: rgba(246, 246, 249, 1);
+  --neutral-950: rgba(33, 35, 48, 1);
+  --tokens-bg-elevated: var(--brand-colors-brand-neutral-100);
+  --tokens-bg-idea-card-fern-bg: var(--brand-colors-fern-400);
+  --tokens-bg-idea-card-fern-text: var(--brand-colors-fern-950);
+  --tokens-bg-idea-card-mustard-bg: var(--brand-colors-mustard-300);
+  --tokens-bg-idea-card-mustard-text: var(--brand-colors-mustard-950);
+  --tokens-bg-idea-card-rose-bg: var(--brand-colors-lavender-rose-800);
+  --tokens-bg-idea-card-rose-text: var(--brand-colors-lavender-rose-100);
+  --tokens-bg-idea-card-violet-bg: var(--brand-colors-electric-violet-500);
+  --tokens-bg-idea-card-violet-text: var(--brand-colors-electric-violet-50);
+  --tokens-bg-overlay: var(--brand-colors-electric-violet-100);
+  --tokens-bg-page: var(--brand-colors-brand-neutral-50);
+  --tokens-bg-phone-frame: var(--brand-colors-brand-neutral-950);
+  --tokens-bg-surface: rgba(255, 255, 255, 1);
+  --tokens-bg-transparent: rgba(255, 255, 255, 0);
+  --tokens-border-default: var(--brand-colors-brand-neutral-200);
+  --tokens-border-strong: var(--brand-colors-brand-neutral-500);
+  --tokens-brand-primary: var(--brand-colors-electric-violet-500);
+  --tokens-brand-primary-border: var(--brand-colors-electric-violet-300);
+  --tokens-brand-primary-hover: var(--brand-colors-electric-violet-600);
+  --tokens-brand-primary-subtle: var(--brand-colors-electric-violet-100);
+  --tokens-brand-secondary: var(--brand-colors-mustard-300);
+  --tokens-brand-secondary-border: var(--brand-colors-mustard-400);
+  --tokens-brand-secondary-hover: var(--brand-colors-mustard-400);
+  --tokens-brand-secondary-subtle: var(--brand-colors-mustard-200);
+  --tokens-status-error: var(--brand-colors-red-200);
+  --tokens-status-error-subtle: var(--brand-colors-red-50);
+  --tokens-status-success: var(--brand-colors-fern-500);
+  --tokens-status-success-subtle: var(--brand-colors-fern-50);
+  --tokens-text-muted: var(--brand-colors-brand-neutral-500);
+  --tokens-text-on-primary: rgba(255, 255, 255, 1);
+  --tokens-text-on-secondary: var(--brand-colors-brand-neutral-950);
+  --tokens-text-primary: var(--brand-colors-brand-neutral-950);
+  --tokens-text-secondary: var(--brand-colors-brand-neutral-600);
+  --web-body-LG-font-family: "Montserrat", Helvetica;
+  --web-body-LG-font-size: 18px;
+  --web-body-LG-font-style: normal;
+  --web-body-LG-font-weight: 400;
+  --web-body-LG-letter-spacing: 0px;
+  --web-body-LG-line-height: 28px;
+  --web-body-MD-font-family: "Montserrat", Helvetica;
+  --web-body-MD-font-size: 16px;
+  --web-body-MD-font-style: normal;
+  --web-body-MD-font-weight: 400;
+  --web-body-MD-letter-spacing: 0px;
+  --web-body-MD-line-height: 24px;
+  --web-body-SM-font-family: "Montserrat", Helvetica;
+  --web-body-SM-font-size: 14px;
+  --web-body-SM-font-style: normal;
+  --web-body-SM-font-weight: 400;
+  --web-body-SM-letter-spacing: 0px;
+  --web-body-SM-line-height: 21px;
+  --web-display-LG-font-family: "Montserrat", Helvetica;
+  --web-display-LG-font-size: 48px;
+  --web-display-LG-font-style: normal;
+  --web-display-LG-font-weight: 800;
+  --web-display-LG-letter-spacing: -0.3840000057220459px;
+  --web-display-LG-line-height: 60px;
+  --web-display-MD-font-family: "Montserrat", Helvetica;
+  --web-display-MD-font-size: 36px;
+  --web-display-MD-font-style: normal;
+  --web-display-MD-font-weight: 700;
+  --web-display-MD-letter-spacing: -0.18px;
+  --web-display-MD-line-height: 47px;
+  --web-display-XL-font-family: "Montserrat", Helvetica;
+  --web-display-XL-font-size: 56px;
+  --web-display-XL-font-style: normal;
+  --web-display-XL-font-weight: 800;
+  --web-display-XL-letter-spacing: -0.56px;
+  --web-display-XL-line-height: 67px;
+  --web-heading-h2-font-family: "Montserrat", Helvetica;
+  --web-heading-h2-font-size: 30px;
+  --web-heading-h2-font-style: normal;
+  --web-heading-h2-font-weight: 600;
+  --web-heading-h2-letter-spacing: -0.09000000357627869px;
+  --web-heading-h2-line-height: 40px;
+  --web-heading-h3-font-family: "Montserrat", Helvetica;
+  --web-heading-h3-font-size: 24px;
+  --web-heading-h3-font-style: normal;
+  --web-heading-h3-font-weight: 600;
+  --web-heading-h3-letter-spacing: -0.04800000071525574px;
+  --web-heading-h3-line-height: 33px;
+  --web-heading-h4-font-family: "Montserrat", Helvetica;
+  --web-heading-h4-font-size: 20px;
+  --web-heading-h4-font-style: normal;
+  --web-heading-h4-font-weight: 600;
+  --web-heading-h4-letter-spacing: 0px;
+  --web-heading-h4-line-height: 28px;
+  --web-label-MD-font-family: "Montserrat", Helvetica;
+  --web-label-MD-font-size: 16px;
+  --web-label-MD-font-style: normal;
+  --web-label-MD-font-weight: 500;
+  --web-label-MD-letter-spacing: 0px;
+  --web-label-MD-line-height: 22px;
+  --web-label-SM-font-family: "Montserrat", Helvetica;
+  --web-label-SM-font-size: 14px;
+  --web-label-SM-font-style: normal;
+  --web-label-SM-font-weight: 500;
+  --web-label-SM-letter-spacing: 0.028000000417232513px;
+  --web-label-SM-line-height: 19px;
+  --web-label-XS-font-family: "Montserrat", Helvetica;
+  --web-label-XS-font-size: 12px;
+  --web-label-XS-font-style: normal;
+  --web-label-XS-font-weight: 500;
+  --web-label-XS-letter-spacing: 0.04800000071525574px;
+  --web-label-XS-line-height: 16px;
+  --white: rgba(255, 255, 255, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-tokens-mode="dark">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-tokens-mode="dark"] {
+  --tokens-bg-elevated: var(--brand-colors-brand-neutral-800);
+  --tokens-bg-idea-card-fern-bg: var(--brand-colors-fern-100);
+  --tokens-bg-idea-card-fern-text: var(--brand-colors-fern-800);
+  --tokens-bg-idea-card-mustard-bg: var(--brand-colors-mustard-100);
+  --tokens-bg-idea-card-rose-bg: var(--brand-colors-lavender-rose-100);
+  --tokens-bg-idea-card-rose-text: var(--brand-colors-lavender-rose-900);
+  --tokens-bg-idea-card-violet-bg: var(--brand-colors-electric-violet-100);
+  --tokens-bg-idea-card-violet-text: var(--brand-colors-electric-violet-900);
+  --tokens-bg-overlay: var(--brand-colors-brand-neutral-900);
+  --tokens-bg-page: var(--brand-colors-brand-neutral-950);
+  --tokens-bg-phone-frame: var(--brand-colors-brand-neutral-700);
+  --tokens-bg-surface: var(--brand-colors-brand-neutral-900);
+  --tokens-border-default: var(--brand-colors-brand-neutral-800);
+  --tokens-border-strong: var(--brand-colors-brand-neutral-600);
+  --tokens-brand-primary-border: var(--brand-colors-electric-violet-400);
+  --tokens-brand-primary-hover: var(--brand-colors-electric-violet-400);
+  --tokens-brand-primary-subtle: var(--brand-colors-electric-violet-800);
+  --tokens-brand-secondary-border: var(--brand-colors-mustard-300);
+  --tokens-brand-secondary-hover: var(--brand-colors-mustard-100);
+  --tokens-brand-secondary-subtle: var(--brand-colors-mustard-400);
+  --tokens-status-error: var(--brand-colors-red-100);
+  --tokens-status-error-subtle: var(--brand-colors-red-400);
+  --tokens-status-success: var(--brand-colors-fern-300);
+  --tokens-status-success-subtle: var(--brand-colors-fern-800);
+  --tokens-text-muted: var(--brand-colors-brand-neutral-400);
+  --tokens-text-primary: var(--brand-colors-brand-neutral-50);
+  --tokens-text-secondary: var(--brand-colors-brand-neutral-300);
+}
+
+[data-tokens-mode="light"] {
+  --tokens-bg-elevated: var(--brand-colors-brand-neutral-100);
+  --tokens-bg-idea-card-fern-bg: var(--brand-colors-fern-400);
+  --tokens-bg-idea-card-fern-text: var(--brand-colors-fern-950);
+  --tokens-bg-idea-card-mustard-bg: var(--brand-colors-mustard-300);
+  --tokens-bg-idea-card-rose-bg: var(--brand-colors-lavender-rose-800);
+  --tokens-bg-idea-card-rose-text: var(--brand-colors-lavender-rose-100);
+  --tokens-bg-idea-card-violet-bg: var(--brand-colors-electric-violet-500);
+  --tokens-bg-idea-card-violet-text: var(--brand-colors-electric-violet-50);
+  --tokens-bg-overlay: var(--brand-colors-electric-violet-100);
+  --tokens-bg-page: var(--brand-colors-brand-neutral-50);
+  --tokens-bg-phone-frame: var(--brand-colors-brand-neutral-950);
+  --tokens-bg-surface: rgba(255, 255, 255, 1);
+  --tokens-border-default: var(--brand-colors-brand-neutral-200);
+  --tokens-border-strong: var(--brand-colors-brand-neutral-500);
+  --tokens-brand-primary-border: var(--brand-colors-electric-violet-300);
+  --tokens-brand-primary-hover: var(--brand-colors-electric-violet-600);
+  --tokens-brand-primary-subtle: var(--brand-colors-electric-violet-100);
+  --tokens-brand-secondary-border: var(--brand-colors-mustard-400);
+  --tokens-brand-secondary-hover: var(--brand-colors-mustard-400);
+  --tokens-brand-secondary-subtle: var(--brand-colors-mustard-200);
+  --tokens-status-error: var(--brand-colors-red-200);
+  --tokens-status-error-subtle: var(--brand-colors-red-50);
+  --tokens-status-success: var(--brand-colors-fern-500);
+  --tokens-status-success-subtle: var(--brand-colors-fern-50);
+  --tokens-text-muted: var(--brand-colors-brand-neutral-500);
+  --tokens-text-primary: var(--brand-colors-brand-neutral-950);
+  --tokens-text-secondary: var(--brand-colors-brand-neutral-600);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
